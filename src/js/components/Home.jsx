@@ -1,16 +1,18 @@
 import React from "react";
-import Tasks from "./Tasks";
+import TodoList from "./TodoList";
 
 
 //create your first component
-const Home = () => {
+function Home() {
 	return (
-		<div className="container">
-            
-		<Tasks/>
-			
-		</div>
+	  <div className="Home container m-5">
+		<h1>Mi Lista de Tareas</h1>
+		<TodoList />
+	  </div>
 	);
-};
+  }
+  
+  export default Home;
 
-export default Home;
+
+
